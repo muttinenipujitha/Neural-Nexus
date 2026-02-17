@@ -8,7 +8,6 @@ interface Document { id: string; name: string; chunks: string[]; }
 interface ChatRun { id: string; question: string; answer: string; source: string; snippet: string; }
 
 export default function Home() {
-  // --- PERSISTENCE LOGIC (Fixes Hydration Error) ---
   const [documents, setDocuments] = useState<Document[]>([]);
   const [history, setHistory] = useState<ChatRun[]>([]);
   const [question, setQuestion] = useState('');
