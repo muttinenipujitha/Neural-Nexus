@@ -81,7 +81,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#050505] text-white font-sans overflow-hidden relative selection:bg-purple-500 selection:text-white">
       
-      {/* Clean Background - No Blurs */}
+      
       <div className="fixed inset-0 z-0 bg-gradient-to-b from-[#050505] to-[#0a0a0f]" />
 
       <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-half max-w-5xl px-4">
