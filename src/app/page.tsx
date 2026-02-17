@@ -84,7 +84,7 @@ export default function Home() {
       
       <div className="fixed inset-0 z-0 bg-gradient-to-b from-[#050505] to-[#0a0a0f]" />
 
-      <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-half max-w-5xl px-4">
+      <header className="fixed top-6 left-2/1 -translate-x-1/2 z-50 w-half max-w-5xl px-4">
         <div className="bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-full px-6 py-2.5 flex items-center justify-between shadow-lg shadow-black/20">
           <div className="flex items-center gap-3">
             <div className="p-1.5 bg-purple-500/20 rounded-lg">
