@@ -10,7 +10,6 @@ export async function POST(req: NextRequest) {
 
     const text = await file.text();
     
-    // Chunking Strategy: Split by double newlines, cap at 1000 chars
     const rawChunks = text.split(/\n\s*\n/);
     const chunks: string[] = [];
     let currentChunk = "";
