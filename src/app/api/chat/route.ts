@@ -18,7 +18,6 @@ export async function POST(req: NextRequest) {
     });
 
     const searchSpace = allChunks.slice(0, 50);
-
     const chunksList = searchSpace.map((c, i) => 
       `Doc: ${c.docName}\nChunk ${i + 1}: ${c.text}`
     ).join("\n---\n");
@@ -30,7 +29,7 @@ export async function POST(req: NextRequest) {
       Output the chunk number (1-${searchSpace.length}) that best answers the question. If none, output 0. Number only:
     `;
 
-    let bestChunk = searchSpace[0]; // Fallback
+    let bestChunk = searchSpace[0]; 
     let sourceName = "Unknown";
 
     try {
@@ -50,7 +49,7 @@ export async function POST(req: NextRequest) {
 
     sourceName = bestChunk.docName;
 
-    // 3. Generation
+  
     const answerPrompt = `
       Context: "${bestChunk.text}"
       Question: ${question}
