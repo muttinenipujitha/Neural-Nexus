@@ -5,7 +5,7 @@ A modern, private knowledge AI interface built with Next.js. Neural Nexus allows
 
 Designed with a clean, high-contrast "Sci-Fi" aesthetic, featuring separated grids and efficient data visualization.
 
-![Neural Nexus UI](screenshot.png) <!-- Replace with your actual screenshot if desired -->
+
 
 ## ✨ Features
 
